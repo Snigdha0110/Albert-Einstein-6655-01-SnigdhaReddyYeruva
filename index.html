@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Einstein</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="main">
+        <h1><u>Albert Einstein</u></h1>
+    </div>
+
+
+    <div class="navbar">
+        <a href="#About"><b>About</b></a>
+        <a href="#Papers"><b>Papers</b></a>
+        <a href="#Experience"><b>Experience</b></a>
+        <a href="#Hobbies"><b>Hobbies</b></a>
+        <a href="#Blogs"><b>Blogs</b></a>
+    </div>
+    <div class="h400" id="About">
+        <u><h2>About:</h2></u>
+        <div class="about">
+        <div class="abt">
+            <img src="e1.png" height="300px" width="300px">
+        </div>
+            <div class="abt1">
+                <p>
+                    <h1>Name: Albert Einstein</h1>
+                    <h1>Born: March 14, 1879, Ulm, Germany</h1>
+                    <h1>Died: April 18, 1955, Princeton, New Jersey, United States</h1>
+                    <h1>Cause of Death: Abdominal aortic aneurysm</h1>
+                    <h1>Height: 5'9" (1.75m)</h1>
+                </p>
+            </div>
+        </div>
+            <div class="about">
+                <p>
+                    One of the best and most influential physicists of all time, Albert Einstein was a theoretical physicist who was born in Germany.The theory of relativity is what Einstein is most famous for, although he also made significant contributions to the theory of quantum mechanics. The two foundational theories of modern physics are relativity and quantum mechanics. The "most famous equation in the world" is his relativity-derived mass-energy equivalence formula, E = mc2. His writing is also recognized for its impact on modern science. His discovery of the law of the photoelectric effect, which was a crucial milestone in the development of quantum theory, earned him the 1921 Nobel Prize in Physics. His creativity and intellectual ability led to "Einstein" coming to represent genius. One of the man-made elements in the periodic table, Einsteinium, takes his name.
+                </p>
+            </div>
+            </div>
+
+       <div class="papers" id="Papers">
+                <h2><u>Papers</u></h2>
+                <br>
+        <div class="paper1">
+                <a href="https://www.goodreads.com/en/book/show/98593 ">
+                    <img src="The_Universe_and_Dr.Einstein.jpg" width="300px" height="300px">
+                    <b>The_Universe_and_Dr.Einstein,2005</b></a>
+        
+                <a href="https://www.perlego.com/book/735849/einstein-on-politics-his-private-thoughts-and-public-stands-on-nationalism-zionism-war-peace-and-the-bomb-pdf">
+                    <img src="Einstein_on_politics.jpg" width="300px" height="300px">
+                    <b>Einstein on politics, 2013</b></a>
+        
+        
+                <a href="https://physicstoday.scitation.org/doi/10.1063/1.2117822">
+                    <img src="Einstein_versus_the_physical_review.jpeg" width="300px" height="300px">
+                    <b>Einstein versus the physical review, 2005</b></a>
+        
+                <a href="https://partyof12.com/2017/02/12/einstein-on-peace/">
+                    <img src="Einstein_on_peace.jpg" width="300px" height="300px">
+                    <b>Einstein on peace, 2017</b></a>
+        
+                <a href="https://www.nytimes.com/1971/09/05/archives/einstein-the-life-and-times-by-ronald-w-clark-718-pp-new-york-and.html">
+                    <img src="Einstein_The_life_and_times.jpg" width="300px" height="300px">
+                    <b>Einstein The life and times, 2022</b></a>
+           
+         <script>
+            window.onload = function() {
+            fetch('https://upadhayay.github.io/db.json')
+              .then(response => response.json())
+              .then(data => {
+                const booksList = data.books.map(book => `<li>
+                  (${book.year}) - Published: ${book.published}${book.author ? ` - Author: ${book.author}` : ''}
+                </li>`).join('');
+                document.getElementById('paper-data').innerHTML = booksList;
+              })
+              .catch(error => console.log(error));
+          };
+          </script>
+        </div>
+        </div>
+
+
+    <div class="experience" id="Experience">
+        <h2><u>Experience</u></h2>
+        <ul>
+            <li>
+                    <b>Position</b>: Clerk<br>
+                    <b>Location</b>: Swiss Patent Office, Bern<br>
+                    <b>Duration</b>: 1902-1909<br>
+            </li>
+            <br>
+            <li>
+                <b>Position</b>: Lecturer<br>
+                <b>Location</b>: University of Bern<br>
+                <b>Duration</b>: 1908<br>  
+            </li>
+            <br>
+            <li>
+                <b>Position</b>: Associate professor of physics<br>
+                <b>Location</b>: University of Zurich<br>
+                <b>Duration</b>: 1909-1910<br>            
+            </li>
+            <br>
+            <li>
+                <b>Position</b>: Professor of physics<br>
+                <b>Location</b>: University of Prague<br>
+                <b>Duration</b>: 1911<br>               
+            </li>
+            <br>
+            <li>
+                <b>Position</b>: Professor of physics<br>
+                <b>Location</b>: Swiss Federal Polytechnic Institute<br>
+                <b>Duration</b>: 1912-1913<br>               
+            </li>
+            <br>
+            <li>
+                <b>Position</b>: Director<br>
+                <b>Location</b>: Kaiser Wilhelm Physical Institution, Berlin<br>
+                <b>Duration</b>: 1914-1933<br>               
+            </li>
+            <br>
+            <li>
+                <b>Position</b>: Professor of Theoretical Physics<br>
+                <b>Location</b>: Institute for Advanced Study, Princeton<br>
+                <b>Duration</b>: 1933-1955<br>               
+            </li>
+        </ul>
+
+    </div>
+    <div class="hobbies" id="Hobbies">
+        <h2><u>Hobbies</u></h2>
+        <div class="hobbies1">
+                <img src="albert_sailing.jpg" width="300px" height="300px">
+                <img src="albert_violin.jpg" width="300px" height="300px">
+                <img src="albert_smoking.jpg" width="300px" height="300px">
+                <img src="albert_puzzle.jpg" width="300px" height="300px">
+        </div>
+                <p>
+                    <h1>Albert Einstein’s hobbies were sailing, reading ,solving puzzles , playing the violin and piano.</h1> 
+                    <br>He also wrote travel journals that are now held in the Albert Einstein Archives in Jerusalem. Einstein owned several sailboats in his lifetime. Einstein enjoyed reading and it had big influence on him. Einstein began taking violin lessons at an early age, discovering Mozart  at age 13.</br>
+                </p>
+    </div>
+    <div class="blogs" id="Blogs">
+        <h2>
+            <u>Blogs</u> </h2>
+            <div class="blogs1">
+        <a href="https://www.ezega.com/Communities/Blogs/ShowBlogDetails/74580/Inspiring-Lessons-From-the-Life-of-the-Genius-Albert-Einstein">Inspiring Lessons</a>
+        <br> <a href="https://blogs.scientificamerican.com/guest-blog/the-forgotten-life-of-einsteins-first-wife/">The forgotten life of einstein's first wife</a>
+        <br> <a href="https://www.tat.physik.uni-tuebingen.de/~tat/blog/index.php?controller=blog&action=view&tag=Einstein">Astrophysics Stories</a>
+        <br> <a href="https://alberteinsteinblog.org/">His words in today;s context</a>
+    </div>
+    </div>
+</body>
+
+</html>
